@@ -1,0 +1,227 @@
+/* Josh Cameau's css reset */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* /////////user's style//////// */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+}
+.hero {
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  max-width: 100%;
+  /* margin: 0 auto; */
+}
+
+.wrapper {
+  background-color: #1f2937;
+  color: #fff;
+  /* padding: 20px 0 50px 50px; */
+}
+
+.header__wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 50px 0 100px 0;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #f9faf8;
+}
+
+.links {
+  display: flex;
+  gap: 30px;
+  justify-content: space-evenly;
+  color: #e5e7eb;
+}
+
+.header__main {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0;
+  padding: 10px;
+}
+
+.header-main-right {
+  max-width: 600px;
+  align-self: flex-start;
+  padding: 0;
+  margin: 0;
+}
+
+.header-main-left {
+  background-color: rgb(106, 113, 117);
+  padding: 100px;
+  flex: 1;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+  padding: 0;
+  margin: 0;
+  line-height: 60px;
+}
+
+.sn-btn {
+  background-color: #3882f6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 5px 20px;
+  margin-top: 10px;
+}
+
+.s_container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 0 100px 0;
+}
+h2 {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.row {
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #1f2937;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: 3px solid #3882f6;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.two {
+  font-size: 36px;
+  font-weight: light;
+  /* text-decoration: ; */
+  color: #1f2937;
+  background-color: #e5e7eb;
+}
+
+.right {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+}
+
+.blue {
+  gap: 100px;
+  background-color: #3882f6;
+  color: #fff;
+  text-align: start;
+  padding: 100px;
+  border-radius: 10px;
+}
+
+.blue .bold{
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.c2a{
+  background-color: #3882f6;
+  color: #fff;
+  font-weight: 700;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 5px 20px;
+}
+
+footer{
+  background-color: #1f2937;
+}
+.footer__wrapper{
+  max-width: 30%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
